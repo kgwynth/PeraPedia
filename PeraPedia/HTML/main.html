@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeraPedia Main </title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>PeraPedia</h1>
+            <ul>
+                <li><a href="../HTML/PeraPedia.HTML">Home</a></li>
+                <li><a href="../HTML/signin.html">Register</a></li>
+                <li><a href="../HTML/article.html">More</a></li>
+            </ul>
+        </nav>
+        <h1>PeraPedia</h1>
+        <div class="input-section">
+            <label for="Category-Select"> Category:</label>
+            <select id="Category-Select">
+                <option value="Food and Beverages">Food and Beverages</option>
+                <option value="Rent">Rent</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Emergency">Emergency</option>
+            </select>
+
+            <label for="Amount-Input">Amount:</label>
+            <input type="number" id="Amount-Input">
+            <label for="date-input">Date:</label>
+            <input type="date" id="Date-Input">
+            <button id="add-btn">Add</button>
+        </div>
+    </div>
+
+    <div class="expense-list"> 
+        <h2>Expense List</h2>
+        <table>
+            <thead> 
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expense-table-body">
+            </tbody>
+            <tfoot> 
+                <tr> 
+                    <td>Total:</td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

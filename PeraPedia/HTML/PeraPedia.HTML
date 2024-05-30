@@ -1,0 +1,160 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PeraPedia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+        min-height: 100vh;
+        background-image: url("../Assets/imgs/yellow.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-between; /* Adjusted to space between */
+        align-items: center;
+        color: #000; 
+    }
+
+        section .container nav {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .container {
+            text-align: center;
+            width: 80%; 
+            margin: 0 auto; /* Centered horizontally */
+        }
+
+
+
+
+        nav {
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+        padding: 30px 30px; 
+        width: 100%; 
+        position: fixed; 
+        top: 0; /* Positioned at the top */
+        left: 0; /* Positioned at the left */
+        z-index: 1000; 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        background-color: rgba(0, 0, 0,0.1); /* Fully opaque black */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+    }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #000; /* Changed text color to black */
+            display: inline-block;
+        }
+
+   nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a {
+            position: relative;
+            left: -50px;
+        }
+
+        nav ul li a:hover {
+            background-color:#ff9933 ;
+        }
+
+        .article {
+            text-align: center;
+            margin-top: 100px; /* Adjusted top margin */
+            margin-bottom: 20px;
+            width: 60%; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+
+        .article h1 {
+        margin-bottom: 10px;
+        color: #eb7620;
+        font-size: 48px; /* Increased font size */
+        text-align: center; 
+        margin-top: -10%; 
+    }
+
+    .article p {
+    margin-bottom: 10px;
+    color: #eb7620;
+    margin-top: 35px; 
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #eb7620;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 5%; 
+}
+
+.btn:hover {
+            background-color: #ff9933;
+        }
+    </style>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <nav>
+                    <h1>PeraPedia</h1>
+                    <ul>
+                        <li><a href="../HTML/PeraPedia.HTML">Home</a></li>
+                        <li><a href="../HTML/signin.html">Register</a></li>
+                        <li><a href="../HTML/article.html">More</a></li>
+                    </ul>
+                </nav>
+                <div class="article">
+                    <h1> Welcome to PeraPedia </h1>
+                    <p> Stay in control of your spending and savings,
+                        <br>making informed decisions for a brighter financial future. </p>
+                    <a href="../HTML/main.html" target="_blank" class="btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
